@@ -20,6 +20,8 @@ body {
   height: 80px;
   background-color: white;
   position: fixed;
+  font-size: 20px;
+  z-index: 1;
 }
 
 .logoYoogy {
