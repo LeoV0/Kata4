@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: white;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+}
+
+.logoYoogy {
+  margin-left: 30px;
+  width: 100px;
+  height: 30px;
+}
+
+.logoYoogy:hover {
+  cursor: pointer;
+}
+
+.menuBurger {
+  margin-right: 30px;
+  width: 40px;
+  height: 40px;
+  color: gray;
+}
+
+.menuBurger:hover {
+  cursor: pointer;
+}
+
+.blogText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: white;
+}
+
+.blogText h1 {
+  font-size: 60px;
+}
+
+.blogText p {
+  font-size: 20px;
+}
+
+.recetteTitle {
+  font-size: 30px;
+}
+
+.cardMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c0cc9b;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+}
+
+.titleHead p {
+  margin-top: 50px;
+  font-size: 30px;
+  color: rgb(135, 163, 48);
+}
+
+.card {
+  flex: 0 1 30%;
+  margin: 10px;
+  height: 450px;
+  border-radius: 20px;
+  background-color: white;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.imageCard img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.imageCard p {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: rgb(135, 163, 48);
+}
+.bolText {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.recetteText {
+  margin-left: 10px;
+}
+
+.infoHealth {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.infoHealth p {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 20px;
+  margin-right: 20px;
+  background-color: rgb(192, 204, 155);
+  border-radius: 10px;
+  font-size: 15px;
+  color: rgb(68, 82, 24);
+}
+
+footer {
+  background-color: black;
+}
+
+.containerFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerFooter img {
+  margin-bottom: 10px;
+  color: white;
+}
+.containerFooter p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(192, 204, 155);
+}
+
+.containerFooter p:hover {
+  cursor: pointer;
+  color: white;
+}
+.textContent {
+  display: none;
+}
+@media screen and (min-width: 868px) {
+  .cardMenu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menuBurger {
+    display: none;
+  }
+  .textContent {
+    display: flex;
+  }
+}
